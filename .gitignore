@@ -31,3 +31,7 @@ public class FastSOS extends AppCompatActivity {
 
 
         controller = new BD_Controle(this, "", null,1);
+        
+    }
+    
+    Ícaro Campos
