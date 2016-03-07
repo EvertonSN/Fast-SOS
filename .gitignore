@@ -34,4 +34,21 @@ public class FastSOS extends AppCompatActivity {
         
     }
     
-    Ícaro Campos
+    --> Ícaro Campos <--
+    
+    public void btn_click(View view){
+        switch (view.getId()){
+            case R.id.button_add:
+                try {
+                    controller.insert_usuario(nome.getText().toString(), sobrenome.getText().toString());
+                }catch (SQLiteException e){
+                    Toast.makeText(FastSOS.this, "Já existe", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.list_usuarios:
+                controller.list_all_usuarios(textView);
+                break;
+        }
+    }
+}
+
