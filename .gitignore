@@ -52,3 +52,22 @@ public class FastSOS extends AppCompatActivity {
     }
 }
 
+    --> Valmir Júnior <--
+    
+                case R.id.btn_update :
+                AlertDialog.Builder dialog = new AlertDialog.Builder(FastSOS.this);
+                dialog.setTitle("Digite o seu nome");
+
+                final EditText new_nome = new EditText(this);
+                dialog.setView(new_nome);
+
+                dialog.setPositiveButton("Pronto", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        controller.update_usuario(nome.getText().toString(), new_nome.getText().toString());
+                    }
+                });
+
+                dialog.show();
+
+                break;
