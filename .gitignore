@@ -50,7 +50,13 @@ public class FastSOS extends AppCompatActivity {
                 break;
         }
     }
-}
+} 
+
+-->jhonnata lennon <--
+
+            case R.id.btn_delete:
+                controller.delete_usuario(nome.getText().toString());
+                break;
 
     --> Valmir Júnior <--
     
